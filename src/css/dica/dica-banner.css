@@ -154,9 +154,22 @@ margin-left: -80px;
  .area-uteis {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     justify-content: center;
-    height: 300px;
+    height: auto;
     background-color: #5C735E;
+  }
+
+  .conteudo-uteis {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .titu-uteis {
@@ -365,4 +378,13 @@ margin-left: -80px;
     .noticias-item {
       min-width: 236px;
     }
+
+    .itens-uteis {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+    }  
+
+
   }

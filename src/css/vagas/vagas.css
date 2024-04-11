@@ -118,4 +118,9 @@
     margin-top: 20px;
     box-sizing: border-box; /* inclui o padding e a borda na largura total */
 }
+
+.vagas-imagem-banner{
+  display: none;
+}
+
 }

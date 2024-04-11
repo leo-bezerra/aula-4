@@ -114,20 +114,23 @@
   }
 
 
-    .conteudo-area-banner h1 {
-      font-size: 50px;
-      overflow: hidden;
-      width: 80%;
-      margin-top: 150px;
-    }
+  .vagas-area-banner h1 {
+    font-size: 50px;
+    font-weight: 800;
+    width: 600px;
+    line-height: 1.0;
+    color: #F2EDE3;
+    margin-top: 100px;
+  }
+  
+  .vagas-area-banner p {
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.6;
+    margin-top: -30px;
+    color: #F2EDE3;
+  }
 
-    .conteudo-area-banner p {
-      font-size: 14px;
-      overflow: hidden;
-      width: 80%;
-      line-height: 1.6;
-      margin-top: -30px;
-    }  
 
     
 }

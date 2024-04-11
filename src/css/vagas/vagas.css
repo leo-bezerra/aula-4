@@ -10,7 +10,7 @@
   .vagas-area {
     display: flex; 
     flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
-    flex-direction: row; /*Os itens ficam em linha*/
+    flex-direction: column;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
@@ -97,4 +97,19 @@
         max-width: calc(100% - 20px); 
         margin-right: 0; 
   }
+
+  .box-vagas { 
+    max-width: calc(100%); 
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    box-sizing: border-box; /* inclui o padding e a borda na largura total */
+}
+
+.vagas-imagem-banner {
+  display: none;
+}
+
 }

@@ -1,137 +1,115 @@
 .vagas {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 40px 0 80px 0;
-    background-color: #F1EDE3;
-  }
-  
-  .vagas-area {
-    display: flex; 
-    flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
-    flex-direction: row; /*Os itens ficam em linha*/
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0 80px 0;
+  background-color: #F1EDE3;
+  box-sizing: border-box; /* inclui o padding e a borda na largura total */
+}
+
+.vagas-area {
+  display: flex; 
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box; /* inclui o padding e a borda na largura total */
+}
 
 .box-vagas {
-    flex-basis: calc(30% - 20px); 
-    max-width: calc(30% - 20px); 
-    padding: 20px;
-    background-color: #FFF;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    box-sizing: border-box; /* inclui o padding e a borda na largura total */
+  flex-basis: calc(30% - 20px); 
+  max-width: calc(30% - 20px); 
+  padding: 20px;
+  background-color: #FFF;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  box-sizing: border-box; /* inclui o padding e a borda na largura total */
 }
 
-/* Serve para aplicar margem a direita em todos os elementos, menos no último de cada linha */
 .box-usuario:not(:nth-child(2n)) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
-  
-  .img-vaga {
-    width: 60px;
-    height: 60px;
-    float: left; 
-    margin-right: 20px; 
-  }
-  
-  .nome-usuario {
-    color: #445746; 
-    font-weight: 700;
-    font-size: 16px;
-    display: block;
-    margin-top: 10px;
-  }
+.img-vaga {
+  width: 60px;
+  height: 60px;
+  float: left; 
+  margin-right: 20px; 
+}
 
-  .texto-usuario {
-    width: 100%;
-    color: #6F7D70;
-    font-size: 14px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
-  
-  .pais-usuario {
-    color: #BA845D;
-    font-weight: 500;
-    font-size: 15px;
-  }
+.nome-usuario {
+  color: #445746; 
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+}
 
-/*estrelas*/  
+.texto-usuario {
+  width: 100%;
+  color: #6F7D70;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.pais-usuario {
+  color: #BA845D;
+  font-weight: 500;
+  font-size: 15px;
+}
+
 .avaliacao {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    font-size: 0;
-    display: inline-block;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 0;
+  display: inline-block;
 }
 
 .avaliacao > input {
-    display: none;
+  display: none;
 }
 
 .avaliacao > label {
-    font-size: 30px;
-    cursor: pointer;
-    color: #A7A7A7;
+  font-size: 30px;
+  cursor: pointer;
+  color: #A7A7A7;
 }
 
 .avaliacao > input:checked ~ label,
 .avaliacao > input:checked ~ label ~ label {
-    color: gold;
+  color: gold;
 }
 
-/*estrelas fim*/
-  
-
-
-/* MOBILE CELULAR */
-  
-  @media screen and (max-width: 768px) {
-    .box-usuario {
-        flex-basis: calc(100% - 20px); 
-        max-width: calc(100% - 20px); 
-        margin-right: 0; 
+@media screen and (max-width: 768px) {
+  .box-usuario {
+      flex-basis: calc(100% - 20px); 
+      max-width: calc(100% - 20px); 
+      margin-right: 0;
+      margin-top: 10px; /* ajustado ou removido conforme necessário */
   }
 
   .vagas-area {
-    display: flex; 
-    flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%; /* ajustado para ocupar toda a largura */
+      margin: 0 auto;
   }
 
   .box-vagas {
-    max-width: calc(100% - 20px); 
-    padding: 20px;
-    background-color: #FFF;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    box-sizing: border-box; /* inclui o padding e a borda na largura total */
-}
-
-.vagas-imagem-banner{
-  display: none;
-}
-
-.vagas-area {
-    display: flex; 
-    flex-wrap: wrap; /*Quebra a linha assim que um dos flex itens não puder mais ser compactado.*/
-    flex-direction: row; /*Os itens ficam em linha*/
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    
+      max-width: calc(100% - 20px); 
+      padding: 20px;
+      background-color: #FFF;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      box-sizing: border-box;
   }
 
+  .vagas-imagem-banner {
+      display: none;
+  }
 }

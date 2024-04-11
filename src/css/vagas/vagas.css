@@ -5,7 +5,7 @@
   justify-content: center;
   padding: 40px 0 80px 0;
   background-color: #F1EDE3;
-  box-sizing: border-box; /* inclui o padding e a borda na largura total */
+  box-sizing: border-box;
 }
 
 .vagas-area {
@@ -15,7 +15,8 @@
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
-  box-sizing: border-box; /* inclui o padding e a borda na largura total */
+  box-sizing: border-box;
+  overflow: hidden; /* Adicionado para possíveis overflow */
 }
 
 .box-vagas {
@@ -26,7 +27,8 @@
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
-  box-sizing: border-box; /* inclui o padding e a borda na largura total */
+  box-sizing: border-box;
+  overflow: hidden; /* Adicionado para possíveis overflow */
 }
 
 .box-usuario:not(:nth-child(2n)) {
@@ -89,13 +91,13 @@
       flex-basis: calc(100% - 20px); 
       max-width: calc(100% - 20px); 
       margin-right: 0;
-      margin-top: 10px; /* ajustado ou removido conforme necessário */
+      margin-top: 10px;
   }
 
   .vagas-area {
       flex-direction: column;
       justify-content: space-between;
-      width: 100%; /* ajustado para ocupar toda a largura */
+      width: 100%;
       margin: 0 auto;
   }
 

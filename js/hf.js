@@ -14,10 +14,10 @@ header.innerHTML = `
     <div class="alt-menu">
             <ul>
                 <li><a class="links" href="index.html" target="_self">Home</a></li>
-                <li><a class="links" href="juntese.html" target="_self">Junte-se a Nós</a></li>
+                <li><a class="links" href="Dica_viajante.html" target="_self">Dicas Viajantes</a></li>
                 <li><a class="links" href="diadia.html" target="_self">Dia a dia</a></li>
-                <li><a class="links" href="vagas.html" target="_self">Vagas Remotas</a></li>
-                <li><a class="links" href="faleconosco.html" target="_self">Fale Conosco</a></li>
+                <li><a class="links" href="vagasremotas.html" target="_self">Vagas Remotas</a></li>
+                <li><a class="links" href="faleconosco.html" target="_self">Contato</a></li>
             </ul>
             </div>
 </nav>
@@ -28,10 +28,10 @@ header.innerHTML = `
             <span></span>
             <ul class="menu-mobile">
               <li><a class="links-m" href="index.html"><span class="material-icons">other_houses</span>Home</a></li>
-              <li><a class="links-m" href="juntese.html"><span class="material-icons">diversity_1</span>Junte-se a Nós</a></li>
+              <li><a class="links-m" href="Dica_viajante.html"><span class="material-icons">diversity_1</span>Dicas Viajantes</a></li>
               <li><a class="links-m" href="diadia.html"><span class="material-icons">explore</span>Dia a dia</a></li>
-              <li><a class="links-m" href="vagas.html"><span class="material-icons">flight_takeoff</span>Vagas Remotas</a></li>
-              <li><a class="links-m" href="faleconosco.html"><span class="material-icons">perm_phone_msg</span>Fale Conosco</a></li>
+              <li><a class="links-m" href="vagasremotas.html"><span class="material-icons">flight_takeoff</span>Vagas Remotas</a></li>
+              <li><a class="links-m" href="faleconosco.html"><span class="material-icons">perm_phone_msg</span>Contato</a></li>
             </ul>
           </div>
     

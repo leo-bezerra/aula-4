@@ -1,7 +1,9 @@
 .titulos-areas {
-    width: 100%;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
     display: block;
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.0;
     text-align: center;

@@ -1,4 +1,4 @@
-.area-banner {
+.vagas-banner2 {
     position: relative;
     width: 100%;
     height: 700px;
@@ -7,6 +7,25 @@
     justify-content: center; 
     flex-direction: column;
     background-color: #405040; 
+}
+
+.vagas-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.vagas-banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .imagem-com-transparencia {
@@ -22,26 +41,31 @@
   display: none; 
 }
 
-  .conteudo-area-banner {
+  .vagas-imagem-banner {
+    width: 600px;
+    height: 480px;
+    right: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: #fff; 
-    z-index: 1;
+    transform: translateY(-50%);
+  }
+
+  .vagas-area-banner {
     width: 80%;
+    margin: 0 auto;
+    position: relative;
   }
   
-  .conteudo-area-banner h1 {
+  .vagas-area-banner h1 {
     font-size: 75px;
     font-weight: 800;
     width: 600px;
     line-height: 1.0;
     color: #F2EDE3;
+    margin-top: 100px;
   }
   
-  .conteudo-area-banner p {
+  .vagas-area-banner p {
     font-size: 16px;
     width: 500px;
     line-height: 1.6;
@@ -52,7 +76,7 @@
   
 /* BANNER BOTÃO */
 
-  .conteudo-area-banner button {
+  .vagas-area-banner button {
     padding: 20px 70px;
     font-size: 1em;
     background-color: #5C735E; 
@@ -64,7 +88,7 @@
     transition: transform 0.3s ease-out;
   }
 
-  .conteudo-area-banner button:hover {
+  .vagas-area-banner button:hover {
     transform: translateY(-5px);
   }
 

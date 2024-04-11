@@ -1,0 +1,314 @@
+.area-menu {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(254, 247, 235, 0.95); 
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-conteudos {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 234px;
+    height: 72px;
+    margin-right: 40px;
+    flex: 1;
+    z-index: 9999;
+}
+
+.menu-d {
+    width: 80%;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    z-index: 9799;
+    flex: 2;
+}
+
+.alt-menu {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px
+}
+
+.menu-d ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-d li {
+    margin-right: 20px;
+}
+
+.buscar {
+  width: 350px;
+  margin-top: 25px;
+  flex: 1;
+}
+
+ /* BOTAO BUSCAR */
+ input[type="submit"] {
+    background: url("/assets/images/lupa.png") no-repeat center; 
+    /*background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;*/
+    background-size: contain; 
+    width: 30px; 
+    height: 30px; 
+    border: none;
+    cursor: pointer;
+    text-indent: -9999px; 
+    transition: transform 0.3s ease-out;
+  }
+
+  input[type="submit"]:hover {
+    opacity: 0.8; 
+    transform: translateY(-5px);
+  }  
+
+/* LINKS MENU */
+
+.links {
+    position: relative;
+    color: #5C745E;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.links::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #BA845D;
+    transition: width 0.4s; 
+}
+
+.links:hover::before {
+    width: 100%;
+}
+
+.links:focus {
+    color: #5C735E;
+}
+
+.links:active {
+    color: #BA845D;
+}
+
+.links:visited {
+    color: #5C735E;
+}
+
+
+
+/*MENU HAMBURGUER MOBILE */
+
+nav {
+    height: 65px;
+  }
+  
+  #menuToggle {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 8999;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  #menuToggle input {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+  }
+  
+  #menuToggle span {
+    display: flex;
+    width: 29px;
+    height: 4px;
+    margin-bottom: 5px;
+    background: #BA845D;
+    border-radius: 3px;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span {
+    display: none; /* Inicialmente oculto */
+  }
+  
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+  
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  .menu-mobile {
+    position: relative;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px #85888C;
+    padding: 50px;
+    margin-left: -20px;
+    padding-top: 60px;
+    font-weight: 500;
+    background-color: #BA845D;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 100% 0%;
+    transform: translateX(100%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+  
+  .menu-open {
+    transform: translateX(0%);
+  }
+  
+  
+  .menu-mo li {
+    padding: 10px 0;
+    transition-delay: 2s;
+  }
+  
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+  #menuToggle input:checked ~ div > ul {
+    transform: none;
+}
+
+
+/* LINKS MENU MOBILE */
+
+.links-m {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #F6F0E4;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 2.5;
+    transition: color 0.3s ease; 
+}
+
+.links-m:hover {
+    color: #464D3C; 
+}
+
+
+.links-m .material-icons {
+    margin-right: 2px;
+    font-size: 18px;
+    margin-top: -12px;
+}
+
+.links-m span {
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.links-m::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 6px;
+    background-color: #DEC5AE;
+    transition: width 0.4s; 
+}
+
+.links-m:hover::before {
+    width: 100%;
+}
+
+.links-m:focus {
+    color: #DEC5AE;
+}
+
+.links-m:active {
+    color: #DEC5AE;
+}
+
+.links-m:visited {
+    color: #464D3C;
+}
+
+
+
+/* MOBILE CELULAR */
+
+@media screen and (max-width: 767px) {
+
+    .logo {
+        order: 1;
+        margin-left: 50px;
+    }
+
+    .menu-d {
+        display: none;
+    }
+
+    .menu-conteudos {
+        flex-wrap: wrap;
+    }
+
+    #menuToggle span {
+        display: flex; /* Torna visível em dispositivos móveis */
+      }
+}
+
+
+  

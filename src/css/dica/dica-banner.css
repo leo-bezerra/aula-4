@@ -384,7 +384,44 @@ margin-left: -80px;
       flex-wrap: wrap;
       flex-direction: column;
       justify-content: space-between;
-    }  
+    } 
+    
+    .conteudo-area-banner-dia {
+      width: 100%;
+    }
+
+    .conteudo-area-banner-dia p {
+      margin-bottom: 20px; /* Espaçamento abaixo do parágrafo */
+      animation: fadeInUp 1s; /* Animação conforme a classe definida */
+      font-size: 16px;
+      width: 100%;
+      line-height: 1.6;
+      margin-top: -30px;
+      color: #6F7D71;
+    }
+
+    .conteudo-area-banner-dia h1 {
+      margin-bottom: 80px; 
+      animation: fadeInLeft 1s; 
+      font-size: 55px;
+      font-weight: 800;
+      width: 100%;
+      line-height: 1.0;
+      color: #405040;
+    }
+
+    .caixa-nome-usuario {
+      background-color: #BA845D;
+      color: #1F2820;
+      width: 100%;
+      height: 100px;
+      margin-top: -150px;
+      display: flex; 
+      flex-direction: column;
+      border-radius: 0px;
+      align-items: center; /* Centraliza o conteúdo na vertical */
+      margin: 0 auto;
+    }
 
 
   }

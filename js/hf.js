@@ -15,9 +15,9 @@ header.innerHTML = `
             <ul>
                 <li><a class="links" href="index.html" target="_self">Home</a></li>
                 <li><a class="links" href="Dica_viajante.html" target="_self">Dicas Viajantes</a></li>
-                <li><a class="links" href="diadia.html" target="_self">Dia a dia</a></li>
+                <li><a class="links" href="dia-a-dia.html" target="_self">Dia a dia</a></li>
                 <li><a class="links" href="vagasremotas.html" target="_self">Vagas Remotas</a></li>
-                <li><a class="links" href="faleconosco.html" target="_self">Contato</a></li>
+                <li><a class="links" href="https://tinyurl.com/nomadesmundo" target="_blank">Contato</a></li>
             </ul>
             </div>
 </nav>
@@ -29,9 +29,9 @@ header.innerHTML = `
             <ul class="menu-mobile">
               <li><a class="links-m" href="index.html"><span class="material-icons">other_houses</span>Home</a></li>
               <li><a class="links-m" href="Dica_viajante.html"><span class="material-icons">diversity_1</span>Dicas Viajantes</a></li>
-              <li><a class="links-m" href="diadia.html"><span class="material-icons">explore</span>Dia a dia</a></li>
+              <li><a class="links-m" href="dia-a-dia.html"><span class="material-icons">explore</span>Dia a dia</a></li>
               <li><a class="links-m" href="vagasremotas.html"><span class="material-icons">flight_takeoff</span>Vagas Remotas</a></li>
-              <li><a class="links-m" href="faleconosco.html"><span class="material-icons">perm_phone_msg</span>Contato</a></li>
+              <li><a class="links-m" href="https://tinyurl.com/nomadesmundo"><span class="material-icons">perm_phone_msg</span>Contato</a></li>
             </ul>
           </div>
     

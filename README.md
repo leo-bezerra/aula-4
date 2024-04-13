@@ -3,7 +3,7 @@
 # Turma: 50600
 
 
-Domínio que utilizamos para a entrega do projeto final:
+Domínio próprio que utilizamos para a entrega do projeto final:
 https://nomadespelomundo.online/
 
 Figma:
